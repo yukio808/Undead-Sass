@@ -7,7 +7,7 @@
 _in your own forked repo_
 
 1. setup gulp to watches and compiles sass files to the public css directory
-2. use sass to style `index.html` so that it matches the layout in `layouts/undead_sass.png`
+2. use sass to style `index.html` so that it matches the layouts in the `layouts` directory
 
 _you may accomplish these goals without following the steps outlined below_
 
