@@ -19,8 +19,10 @@ _you may accomplish these goals without following the steps outlined below_
 
 ### make sure you have all required dependencies
 
-1. npm `brew install npm`
-2. gulp `npm install -g gulp`
+_If you have not have npm and gulp, you need to install them._
+
+1. `brew install npm`
+2. `npm install -g gulp`
 
 ### setup gulp + sass
 
@@ -40,10 +42,10 @@ _you may accomplish these goals without following the steps outlined below_
 10. test gulp task
   1. 'hello world' of sass, `subl sass/styles.scss`
     ````
-    $bg_color : #333333;
+    $dark-color : #333333;
     
     body {
-      background: $bg_color;
+      background: $dark-color;
     }
     ````
   2. run `gulp` in your terminal
