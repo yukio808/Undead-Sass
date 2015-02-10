@@ -17,3 +17,10 @@
 
 - the max-width of the center content is 900px;
 - the columns are 70% / 30%
+
+## Colors
+
+darkest color: #14273D
+medium color: #389FA8
+medium light color: #57C1C7
+light color: #EFF9EC
