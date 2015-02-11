@@ -38,7 +38,7 @@ _If you have not have npm and gulp, you need to install them._
 8. setup Gulpfile `touch gulpfile.js`
 9. setup Gulpfile task, with `watch_sass` and `default` tasks
   1. `subl gulpfile.js`
-  2. [contents of gulpfile.js](http://i.imgur.com/H2u49eL.png)
+  2. [contents of gulpfile.js](http://i.imgur.com/ql5LvCO.png)
 10. test gulp task
   1. 'hello world' of sass, `subl sass/styles.scss`
     ````
