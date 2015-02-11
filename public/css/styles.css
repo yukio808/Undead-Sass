@@ -1,0 +1,287 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css);
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+body {
+  background: #eff9ec;
+  font-size: 16px;
+  font-family: "Droid Serif"; }
+
+@media screen and (max-width:640px) {
+  body {
+    background-color: #eff9ec;
+    font-size: 16px;
+    z-index: 1; }
+  div.row ul.nav li {
+    visibility: hidden;
+    display: none;
+    text-align: left; }
+  div.row h1 {
+    font-size: 13px;
+    text-align: center;
+    background-color: #389fa8;
+    color: #4fc1c5;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  div.content article {
+    margin-top: 20px;
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 39px;
+    font-size: 16px;
+    border-bottom: solid #4fc1c5 1px;
+    line-height: 1.72em; }
+  div.content article h2 {
+    font-size: 32px;
+    padding-top: 24px; }
+  div.content article h3 a {
+    border-bottom: dashed #4fc1c5 1px;
+    text-decoration: none;
+    color: #101d2e; }
+  div.content article h2 a {
+    border-bottom: dashed #4fc1c5 1px; }
+  div.content article h2 a {
+    text-decoration: none;
+    color: #101d2e; }
+  div.content article h3 {
+    color: #4fc1c5;
+    padding-left: 2px;
+    padding-bottom: 32px;
+    padding-top: 5px; }
+  aside {
+    visibility: hidden;
+    display: none;
+    text-align: left; }
+  div.left {
+    visibility: hidden;
+    display: none;
+    text-align: left; }
+  div.right {
+    text-align: center; }
+  div.right ul {
+    color: #101d2e; }
+  div.right ul.footer_links li {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none; }
+  div.right ul.footer_links li a {
+    text-decoration: none;
+    color: #101d2e; } }
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  body {
+    background: #eff9ec;
+    font-size: 16px;
+    font-family: "Droid Serif"; }
+  div.row ul.nav {
+    text-align: center; }
+  div.row ul.nav li {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center; }
+  div.row ul.nav li a {
+    text-decoration: none;
+    color: #101d2e; }
+  div.row h1 {
+    font-size: 20px;
+    color: #4fc1c5;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 50px;
+    border-top: solid #4fc1c5 1px;
+    border-bottom: solid #4fc1c5 1px;
+    padding-bottom: 50px; }
+  div.content article {
+    margin-top: 20px;
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 39px;
+    font-size: 16px;
+    line-height: 1.72em; }
+  div.content article h2 {
+    font-size: 32px;
+    padding-top: 24px; }
+  div.content article h3 a {
+    border-bottom: dashed #4fc1c5 1px;
+    text-decoration: none;
+    color: #101d2e; }
+  div.content article h2 a {
+    border-bottom: dashed #4fc1c5 1px; }
+  div.content article h2 a {
+    text-decoration: none;
+    color: #101d2e; }
+  div.content article h3 {
+    color: #4fc1c5;
+    padding-left: 2px;
+    padding-bottom: 32px;
+    padding-top: 5px; }
+  aside {
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 42px;
+    border-bottom: solid #4fc1c5 1px;
+    padding-bottom: 39px; }
+  aside h4 {
+    font-size: 20px;
+    color: #4fc1c5;
+    padding-bottom: 15px; }
+  aside a {
+    display: block;
+    background-color: #389fa8;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #4fc1c5; }
+  aside p {
+    padding-bottom: 50px; }
+  .left p {
+    display: none; }
+  div.right {
+    text-align: center; }
+  div.right ul {
+    color: #101d2e; }
+  div.right ul.footer_links li {
+    display: inline-block;
+    padding: 30px 10px 30px 5px;
+    text-decoration: none; }
+  div.right ul.footer_links li a {
+    text-decoration: none;
+    color: #101d2e; } }
+
+@media screen and (min-width: 961px) {
+  body {
+    max-width: 960px;
+    background: #4fc1c5;
+    font-size: 16px;
+    font-family: "Droid Serif";
+    margin: auto; }
+  div.row ul.nav {
+    text-align: center;
+    background: #eff9ec; }
+  div.row ul.nav li {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center; }
+  div.row ul.nav li a {
+    text-decoration: none;
+    color: #101d2e; }
+  div.row h1 {
+    font-size: 20px;
+    color: #4fc1c5;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #eff9ec; }
+  .row {
+    background-color: #eff9ec;
+    border-bottom: solid #4fc1c5 1px; }
+  div.content article {
+    margin-top: 0px;
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 39px;
+    font-size: 16px;
+    background: #eff9ec;
+    width: 58%;
+    border-right: solid #4fc1c5 1px;
+    float: left;
+    line-height: 1.72em; }
+  div.content article h2 {
+    font-size: 32px;
+    padding-top: 24px; }
+  div.content article h3 a {
+    border-bottom: dashed #4fc1c5 1px;
+    text-decoration: none;
+    color: #101d2e; }
+  div.content article h2 a {
+    border-bottom: dashed #4fc1c5 1px;
+    text-decoration: none;
+    color: #101d2e; }
+  .content h3 {
+    color: #4fc1c5;
+    padding-left: 2px;
+    padding-bottom: 32px;
+    padding-top: 5px; }
+  aside {
+    width: 25%;
+    float: right;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 42px;
+    background: #eff9ec; }
+    aside h4 {
+      font-size: 20px;
+      color: #4fc1c5;
+      padding-bottom: 15px; }
+  aside a {
+    display: block;
+    background-color: #389fa8;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #4fc1c5; }
+  aside p {
+    padding-bottom: 50px; }
+  .left p {
+    float: right;
+    padding-top: 30px;
+    padding-right: 39px;
+    background: #eff9ec; }
+  div.right {
+    text-align: left;
+    padding-left: 39px;
+    background: #eff9ec; }
+  div.right ul {
+    color: #101d2e; }
+  div.right ul.footer_links li {
+    display: inline-block;
+    padding: 30px 10px 30px 5px;
+    text-decoration: none; }
+  div.right ul.footer_links li a {
+    text-decoration: none;
+    color: #101d2e; } }

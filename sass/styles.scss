@@ -1,5 +1,335 @@
-$dark-color : #333333;
+@import "partials/reset";
+@import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css";
+
+$dark-color : #101d2e;
+$standard-bg: #eff9ec;
+$headcolor: #57c1c8;
+$top-color:#389fa8;
+$top-txt-color: #4fc1c5;
+$white: #ffffff;
+
+$minimum: "screen and (max-width:640px)";
+$medium: "screen and (min-width: 641px) and (max-width: 960px)";
+$maximum: "screen and (min-width: 961px)";
 
 body {
-	background: $dark-color;
+	background: $standard-bg;
+	font-size: 16px;
+  font-family: "Droid Serif"
+}
+@media #{$minimum} {
+	body{
+		background-color: $standard-bg;
+		font-size: 16px;
+		z-index: 1;
+	}
+  div.row ul.nav li{
+    visibility: hidden;
+    // position: absolute;
+    // z-index: -1;
+    display: none;
+    text-align: left;
+  }
+  div.row h1{
+    // position: relative;
+    font-size: 13px;
+    // font-weight: bold;
+    text-align: center;
+    background-color: $top-color;
+    color: $top-txt-color;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  div.content article{
+    margin-top: 20px; 
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 39px;
+    font-size: 16px;
+    border-bottom: solid $top-txt-color 1px;
+    line-height: 1.72em;
+  }
+  div.content article h2{
+    font-size: 32px;
+    padding-top: 24px;
+  }
+  div.content article h3 a{
+    border-bottom: dashed $top-txt-color 1px;
+    text-decoration: none;
+    color: $dark-color;
+  }
+  div.content article h2 a{
+    border-bottom: dashed $top-txt-color 1px;
+  }
+  div.content article h2 a{
+    text-decoration: none;
+    color: $dark-color;
+  }
+  div.content article h3{
+    color: $top-txt-color;
+    padding-left: 2px;
+    padding-bottom: 32px;
+    padding-top: 5px;
+  }
+  aside{
+    // position: absolute;
+    visibility: hidden;
+    // z-index: -1;
+    display: none;
+    text-align: left;
+  }
+  div.left{
+    // position: absolute;
+    visibility: hidden;
+    // z-index: -1;
+    display: none;
+    text-align: left;
+  }
+  div.right{
+    text-align: center;
+  }
+  div.right ul{
+    color: $dark-color;
+  }
+  div.right ul.footer_links li{
+    display: inline-block;  
+    padding: 10px;
+    text-decoration: none;
+  }
+  div.right ul.footer_links li a{
+    text-decoration: none;
+    color: $dark-color;
+  }
+}
+@media #{$medium} {
+  body{
+  background: $standard-bg;
+  font-size: 16px;
+  font-family: "Droid Serif"
+  }
+  div.row ul.nav{
+    text-align: center;
+  }
+  div.row ul.nav li{
+    display: inline-block;  
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+  div.row ul.nav li a{
+    text-decoration: none;
+    color: $dark-color;
+  }
+  div.row h1{
+    font-size: 20px;
+    color: $top-txt-color;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 50px;
+    border-top: solid $top-txt-color 1px;
+    border-bottom: solid $top-txt-color 1px;
+    padding-bottom: 50px;
+  }
+  div.content article{
+    margin-top: 20px; 
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 39px;
+    font-size: 16px;
+    // border-bottom: solid $top-txt-color 1px;
+    line-height: 1.72em;
+  }
+    div.content article h2{
+    font-size: 32px;
+    padding-top: 24px;
+  }
+  div.content article h3 a{
+    border-bottom: dashed $top-txt-color 1px;
+    text-decoration: none;
+    color: $dark-color;
+  }
+  div.content article h2 a{
+    border-bottom: dashed $top-txt-color 1px;
+  }
+  div.content article h2 a{
+    text-decoration: none;
+    color: $dark-color;
+  }
+  div.content article h3{
+    color: $top-txt-color;
+    padding-left: 2px;
+    padding-bottom: 32px;
+    padding-top: 5px;
+  }
+  aside{
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 42px;
+    border-bottom: solid $top-txt-color 1px;
+    padding-bottom: 39px;
+  }
+  aside h4{
+    font-size: 20px;
+    // font-weight: bold;
+    color: $top-txt-color;
+    padding-bottom: 15px;
+  }
+  aside a{
+    display: block;
+    background-color: $top-color;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $top-txt-color;
+  }
+  aside p{
+    padding-bottom: 50px;
+  }
+  .left p{
+    display: none;
+  }
+   div.right{
+    text-align: center;
+  }
+  div.right ul{
+    color: $dark-color;
+  }
+  div.right ul.footer_links li{
+    display: inline-block;  
+    padding: 30px 10px 30px 5px;
+    text-decoration: none;
+  }
+  div.right ul.footer_links li a{
+    text-decoration: none;
+    color: $dark-color;
+  }
+}
+@media #{$maximum} {
+  body{
+  max-width: 960px;
+  background: $top-txt-color;
+  font-size: 16px;
+  font-family: "Droid Serif";
+  margin: auto;
+  }
+  div.row ul.nav{
+    text-align: center;
+    background: $standard-bg;
+  }
+  div.row ul.nav li{
+    display: inline-block;  
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+  div.row ul.nav li a{
+    text-decoration: none;
+    color: $dark-color;
+  }
+  div.row h1{
+    font-size: 20px;
+    color: $top-txt-color;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 50px;
+    // border-top: solid $top-txt-color 1px;
+    // border-bottom: solid $top-txt-color 1px;
+    padding-bottom: 50px;
+    background: $standard-bg;
+  }
+  .row{
+    background-color: $standard-bg;
+    border-bottom: solid $top-txt-color 1px;
+    // border-left: solid $top-txt-color 1px;
+  }
+  div.content article{
+    margin-top: 0px; 
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 39px;
+    font-size: 16px;
+    background: $standard-bg;
+    width: 58%;
+    border-right: solid $top-txt-color 1px;
+    // height: 99%;
+    float: left;
+    // border-bottom: solid $top-txt-color 1px;
+    line-height: 1.72em;
+  }
+  div.content article h2{
+    font-size: 32px;
+    padding-top: 24px;
+  }
+  div.content article h3 a{
+    border-bottom: dashed $top-txt-color 1px;
+    text-decoration: none;
+    color: $dark-color;
+  }
+  div.content article h2 a{
+    border-bottom: dashed $top-txt-color 1px;
+    text-decoration: none;
+    color: $dark-color;
+  }
+  .content h3{
+    color: $top-txt-color;
+    padding-left: 2px;
+    padding-bottom: 32px;
+    padding-top: 5px;
+  }
+  aside{
+    width: 25%;
+    float: right;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 42px;
+    // padding-bottom: 446px;
+    background: $standard-bg;
+    h4{
+      font-size: 20px;
+      // font-weight: bold;
+      color: $top-txt-color;
+      padding-bottom: 15px;
+    }
+  }
+  aside a{
+    display: block;
+    background-color: $top-color;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $top-txt-color;
+  }
+  aside p{
+    padding-bottom: 50px;
+  }
+  .left p{
+    float: right;
+    padding-top: 30px;
+    padding-right: 39px;
+    background: $standard-bg;
+  }
+   div.right{
+    text-align: left;
+    padding-left: 39px;
+    background: $standard-bg;
+  }
+  div.right ul{
+    color: $dark-color;
+  }
+  div.right ul.footer_links li{
+    display: inline-block;  
+    padding: 30px 10px 30px 5px;
+    text-decoration: none;
+  }
+  div.right ul.footer_links li a{
+    text-decoration: none;
+    color: $dark-color;
+  }
 }
