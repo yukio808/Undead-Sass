@@ -7,7 +7,7 @@
 _in your own forked repo_
 
 1. setup gulp to watches and compiles sass files to the public css directory
-2. use sass to style `index.html` so that it matches the layout in `layouts/undead_sass.png`
+2. use sass to style `index.html` so that it matches the layouts in the `layouts` directory
 
 _you may accomplish these goals without following the steps outlined below_
 
@@ -60,5 +60,11 @@ _If you have not have npm and gulp, you need to install them._
 2. open a browser to make sure you can see `public/index.html` rendered
 3. setup your `public/index.html` to link to your `public/css/styles.css` stylesheet.
 4. If it works, your background shold be gray. commit your work.
-5. Editing only your `sass/styles.scss` file, style your html page so that it matches the layout in `layouts/undead_sass.png`
-6. Once done, commit and push your work.
+5. Create a `partials` directory inside the `sass` directory and add a `reset.scss` file that contains a `clearfix` style and a `css reset`. Import the reset file into your `styles.scss` file at the top of the document.
+6. Import the `Droid Serif` Google font into your `styles.scss` file at the top of the document, after importing the reset file. The format of the import should look like this: 
+  
+  ```
+  @import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css";
+  ```
+
+7. Editing only your `sass/styles.scss` file, style your html page so that it matches the layout in the `layouts` directory.
